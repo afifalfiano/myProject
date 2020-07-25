@@ -1,9 +1,9 @@
-name: Build and Deploy on Branch dist
+name: Build and Deploy
 
 on:
   push:
     branches:
-      - master
+    - master
 
 jobs:
   build-and-deploy:
@@ -22,7 +22,6 @@ jobs:
           ${{ runner.os }}-node-    
     - name: Build
       run: |
-        npm ci
         npm install
         npm run-script deploy
     - name: Deploy
