@@ -56,10 +56,10 @@
   },
   "lint-staged": {
     "*.ts": [
-      "npx tslint projects/uiigateway/monev/src/**/*.ts --fix"
+      "npx tslint src/**/*.ts --fix"
     ],
     "*.scss": [
-      "npx stylelint projects/uiigateway/monev/src/**/*.scss --fix"
+      "npx stylelint src/**/*.scss --fix"
     ]
   }
 }
